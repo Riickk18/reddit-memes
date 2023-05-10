@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  riickk18-reddit-memes
+
+  Created by Richard Pacheco on 5/10/23.
+  
+*/
+"Camera.Permission.Title" = "Camera Access";
+"Camera.Permission.Subtitle" = "Please allow access to your camera to take photos";
+"PushNotification.Permission.Title" = "Enable push notifications";
+"PushNotification.Permission.Subtitle" = "Enable push notifications to let send you personal news and updates.";
+"Location.Permission.Title" = "Enable location services";
+"Location.Permission.Subtitle" = "We wants to access your location only to provide a better experience by helping you find new friends nearby.";

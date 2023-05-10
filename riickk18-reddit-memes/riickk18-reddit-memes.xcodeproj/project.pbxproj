@@ -16,6 +16,12 @@
 		AB8066632A0B1956008E3251 /* riickk18_reddit_memesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8066622A0B1956008E3251 /* riickk18_reddit_memesTests.swift */; };
 		AB80666D2A0B1956008E3251 /* riickk18_reddit_memesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80666C2A0B1956008E3251 /* riickk18_reddit_memesUITests.swift */; };
 		AB80666F2A0B1956008E3251 /* riickk18_reddit_memesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80666E2A0B1956008E3251 /* riickk18_reddit_memesUITestsLaunchTests.swift */; };
+		AB90433B2A0B4E4F00D50E90 /* PermissionsMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB90433A2A0B4E4F00D50E90 /* PermissionsMainView.swift */; };
+		AB90433D2A0B4EDB00D50E90 /* PermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB90433C2A0B4EDB00D50E90 /* PermissionsView.swift */; };
+		AB9043402A0B517700D50E90 /* PermissionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB90433F2A0B517700D50E90 /* PermissionsViewModel.swift */; };
+		AB9043432A0B57DF00D50E90 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB9043452A0B57DF00D50E90 /* Localizable.strings */; };
+		AB9043472A0B58DD00D50E90 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9043462A0B58DD00D50E90 /* Strings+Generated.swift */; };
+		AB90434A2A0B605000D50E90 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9043492A0B605000D50E90 /* LocationManager.swift */; };
 		ABAABA692A0B3C4F0012790F /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAABA682A0B3C4F0012790F /* LaunchScreen.swift */; };
 		ABAABA722A0B3F9D0012790F /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABAABA712A0B3F9D0012790F /* Colors.xcassets */; };
 		CF608AAAD13952C6B8DE1D5B /* Pods_riickk18_reddit_memes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D8C0D06EB06708A27E891C /* Pods_riickk18_reddit_memes.framework */; };
@@ -56,6 +62,12 @@
 		AB8066682A0B1956008E3251 /* riickk18-reddit-memesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "riickk18-reddit-memesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB80666C2A0B1956008E3251 /* riickk18_reddit_memesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = riickk18_reddit_memesUITests.swift; sourceTree = "<group>"; };
 		AB80666E2A0B1956008E3251 /* riickk18_reddit_memesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = riickk18_reddit_memesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AB90433A2A0B4E4F00D50E90 /* PermissionsMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsMainView.swift; sourceTree = "<group>"; };
+		AB90433C2A0B4EDB00D50E90 /* PermissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsView.swift; sourceTree = "<group>"; };
+		AB90433F2A0B517700D50E90 /* PermissionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsViewModel.swift; sourceTree = "<group>"; };
+		AB9043442A0B57DF00D50E90 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AB9043462A0B58DD00D50E90 /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
+		AB9043492A0B605000D50E90 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		ABAABA662A0B3A090012790F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		ABAABA682A0B3C4F0012790F /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 		ABAABA6E2A0B3E7F0012790F /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = SOURCE_ROOT; };
@@ -105,6 +117,7 @@
 		AB75E3202A0B44B4005AC812 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
+				AB9043462A0B58DD00D50E90 /* Strings+Generated.swift */,
 				AB75E3212A0B4500005AC812 /* XCAssets+Generated.swift */,
 			);
 			path = Generated;
@@ -137,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				ABAABA662A0B3A090012790F /* Info.plist */,
+				AB9043482A0B603B00D50E90 /* Utility */,
 				ABAABA652A0B37120012790F /* Resources */,
 				ABAABA622A0B36FD0012790F /* Model */,
 				ABAABA632A0B37060012790F /* ViewModel */,
@@ -164,6 +178,31 @@
 			path = "riickk18-reddit-memesUITests";
 			sourceTree = "<group>";
 		};
+		AB9043392A0B4DE600D50E90 /* Permissions */ = {
+			isa = PBXGroup;
+			children = (
+				AB90433A2A0B4E4F00D50E90 /* PermissionsMainView.swift */,
+				AB90433C2A0B4EDB00D50E90 /* PermissionsView.swift */,
+			);
+			path = Permissions;
+			sourceTree = "<group>";
+		};
+		AB90433E2A0B512400D50E90 /* Permissions */ = {
+			isa = PBXGroup;
+			children = (
+				AB90433F2A0B517700D50E90 /* PermissionsViewModel.swift */,
+			);
+			path = Permissions;
+			sourceTree = "<group>";
+		};
+		AB9043482A0B603B00D50E90 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				AB9043492A0B605000D50E90 /* LocationManager.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		ABAABA622A0B36FD0012790F /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +213,7 @@
 		ABAABA632A0B37060012790F /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				AB90433E2A0B512400D50E90 /* Permissions */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -181,6 +221,7 @@
 		ABAABA642A0B370D0012790F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AB9043392A0B4DE600D50E90 /* Permissions */,
 				ABAABA672A0B3C3A0012790F /* LaunchScreen */,
 			);
 			path = View;
@@ -192,6 +233,7 @@
 				AB8066552A0B1956008E3251 /* Assets.xcassets */,
 				ABAABA712A0B3F9D0012790F /* Colors.xcassets */,
 				AB75E3232A0B46E8005AC812 /* Launch Screen.storyboard */,
+				AB9043452A0B57DF00D50E90 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -327,6 +369,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB75E3242A0B46E8005AC812 /* Launch Screen.storyboard in Resources */,
+				AB9043432A0B57DF00D50E90 /* Localizable.strings in Resources */,
 				ABAABA722A0B3F9D0012790F /* Colors.xcassets in Resources */,
 				AB8066562A0B1956008E3251 /* Assets.xcassets in Resources */,
 			);
@@ -459,7 +502,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB8066522A0B1955008E3251 /* riickk18_reddit_memesApp.swift in Sources */,
+				AB9043402A0B517700D50E90 /* PermissionsViewModel.swift in Sources */,
+				AB90433B2A0B4E4F00D50E90 /* PermissionsMainView.swift in Sources */,
 				ABAABA692A0B3C4F0012790F /* LaunchScreen.swift in Sources */,
+				AB90434A2A0B605000D50E90 /* LocationManager.swift in Sources */,
+				AB9043472A0B58DD00D50E90 /* Strings+Generated.swift in Sources */,
+				AB90433D2A0B4EDB00D50E90 /* PermissionsView.swift in Sources */,
 				AB75E3222A0B4500005AC812 /* XCAssets+Generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -495,6 +543,17 @@
 			targetProxy = AB8066692A0B1956008E3251 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AB9043452A0B57DF00D50E90 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB9043442A0B57DF00D50E90 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		AB8066702A0B1956008E3251 /* Debug */ = {
@@ -624,13 +683,17 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "riickk18-reddit-memes/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Reddit Memes";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Reddit Memes usará tu cámara para captura de contenido";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Reddit Memes usará tu ubicación para mostrarte contenido personalizado";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Reddit Memes usará tu ubicación para mostrarte contenido personalizado";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -657,13 +720,17 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "riickk18-reddit-memes/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Reddit Memes";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Reddit Memes usará tu cámara para captura de contenido";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Reddit Memes usará tu ubicación para mostrarte contenido personalizado";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Reddit Memes usará tu ubicación para mostrarte contenido personalizado";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

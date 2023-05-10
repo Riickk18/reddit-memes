@@ -3,6 +3,17 @@ input_dir: riickk18-reddit-memes/
 # Output directory
 output_dir: riickk18-reddit-memes/Generated/
 
+## Strings
+strings:
+  inputs:
+    - Resources/en.lproj
+  outputs:
+    - templateName: structured-swift5
+      params:
+        publicAccess: true
+        enumName: Strings
+      output: Strings+Generated.swift
+      
 ## XCAssets
 # 1
 xcassets:
