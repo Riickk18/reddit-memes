@@ -11,7 +11,7 @@ import SwiftUI
 struct riickk18_reddit_memesApp: App {
     var body: some Scene {
         WindowGroup {
-            LaunchScreen()
+            PermissionsView(viewModel: PermissionsViewModel())
         }
     }
 }

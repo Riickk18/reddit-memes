@@ -25,9 +25,15 @@ internal enum Asset {
     internal static let launchBackground = ImageAsset(name: "launch-background")
     internal static let launchscreen = ImageAsset(name: "launchscreen")
     internal static let redditIcon = ImageAsset(name: "reddit-icon")
+    internal static let cameraAccess = ImageAsset(name: "camera-access")
+    internal static let locationAccess = ImageAsset(name: "location-access")
+    internal static let pushNotifications = ImageAsset(name: "push-notifications")
   }
   internal enum Colors {
     internal static let launchScreenColor = ColorAsset(name: "LaunchScreenColor")
+    internal static let buttonGradient1 = ColorAsset(name: "button-gradient-1")
+    internal static let buttonGradient2 = ColorAsset(name: "button-gradient-2")
+    internal static let cancelButton = ColorAsset(name: "cancel-button")
   }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
