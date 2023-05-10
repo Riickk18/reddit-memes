@@ -13,6 +13,8 @@ enum PermissionType {
 }
 
 class PermissionsViewModel: ObservableObject {
+    @AppStorage("permissionsWasCompleted", store: .standard) var permissionsWasCompleted: Bool = false
+
     @Published var currentState: PermissionType {
         didSet {
             updateUIForCurrentState()
@@ -21,6 +23,7 @@ class PermissionsViewModel: ObservableObject {
     @Published var image: String = ""
     @Published var title: String = ""
     @Published var subTitle: String = ""
+    @Published var alertPermissions: Bool = false
 
     init(currentState: PermissionType = .camera) {
         self.currentState = currentState
@@ -29,23 +32,25 @@ class PermissionsViewModel: ObservableObject {
 
     private func updateUIForCurrentState() {
         DispatchQueue.main.async { [unowned self] in
-            switch currentState {
-            case .camera:
-                self.image = Asset.Assets.cameraAccess.name
-                self.title = Strings.Camera.Permission.title
-                self.subTitle = Strings.Camera.Permission.subtitle
-            case .pushNotification:
-                self.image = Asset.Assets.pushNotifications.name
-                self.title = Strings.PushNotification.Permission.title
-                self.subTitle = Strings.PushNotification.Permission.subtitle
-            case .location:
-                self.image = Asset.Assets.locationAccess.name
-                self.title = Strings.Location.Permission.title
-                self.subTitle = Strings.Location.Permission.subtitle
+            withAnimation {
+                switch currentState {
+                case .camera:
+                    self.image = Asset.Assets.cameraAccess.name
+                    self.title = Strings.Camera.Permission.title
+                    self.subTitle = Strings.Camera.Permission.subtitle
+                case .pushNotification:
+                    self.image = Asset.Assets.pushNotifications.name
+                    self.title = Strings.PushNotification.Permission.title
+                    self.subTitle = Strings.PushNotification.Permission.subtitle
+                case .location:
+                    self.image = Asset.Assets.locationAccess.name
+                    self.title = Strings.Location.Permission.title
+                    self.subTitle = Strings.Location.Permission.subtitle
+                }
             }
         }
     }
-    
+
     func principalButtonAction() {
         switch currentState {
         case .camera:
@@ -56,38 +61,57 @@ class PermissionsViewModel: ObservableObject {
             verifyLocationPermission()
         }
     }
-    
+
+    func cancelButtonAction() {
+        switch currentState {
+        case .camera:
+            currentState = .pushNotification
+        case .pushNotification:
+            currentState = .location
+        case .location:
+            break
+            //debería de terminar el flujo
+        }
+    }
+
     private func verifyCameraPermission() {
         AVCaptureDevice.requestAccess(for: AVMediaType.video) { response in
             DispatchQueue.main.async { [unowned self] in
                 if response {
                     self.currentState = .pushNotification
                 } else {
-                    print("rejected")
+                    self.alertPermissions = true
                 }
             }
         }
     }
-    
+
     private func verifyPushNotificationPermission() {
         let center = UNUserNotificationCenter.current()
         center.requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
-            
+
             if let error = error {
                 // Handle the error here.
             }
-            
+
             DispatchQueue.main.async { [unowned self] in
                 if granted {
                     self.currentState = .location
                 } else {
-                    print("not granted")
+                    self.alertPermissions = true
                 }
             }
         }
     }
-    
+
     private func verifyLocationPermission() {
-        LocationManager.shared.requestLocationAuthorization()
+        LocationManager.shared.requestLocationAuthorization(
+            onRejectedAction: { [unowned self] in
+                self.alertPermissions = true
+            },
+            onGrantedAction: {  [unowned self] in
+                //finish process
+            }
+        )
     }
 }

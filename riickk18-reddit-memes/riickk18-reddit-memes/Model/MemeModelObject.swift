@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct MemeModelObject: Codable {
+struct MemeModelObject: Decodable {
     var data: MemeModel?
 }

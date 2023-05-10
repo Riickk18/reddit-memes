@@ -17,6 +17,7 @@ struct PermissionsView: View {
             
             VStack(spacing: 20) {
                 Text(viewModel.title)
+                    .multilineTextAlignment(.center)
                     .font(.title)
                 
                 Text(viewModel.subTitle)
@@ -34,25 +35,31 @@ struct PermissionsView: View {
                         .frame(width: 185, height: 50)
                         .foregroundColor(.white)
                         .background {
-                            LinearGradient(
-                                gradient: Gradient(colors: [
-                                    Color(uiColor: Asset.Colors.buttonGradient1.color),
-                                    Color(uiColor: Asset.Colors.buttonGradient2.color)
-                                ]),
-                                startPoint: .leading,
-                                endPoint: .trailing)
+                            GradientBackgroundView(
+                                colors: (
+                                    Asset.Colors.buttonGradient1.color,
+                                    Asset.Colors.buttonGradient2.color
+                                ),
+                                points: (
+                                    startPoint: .leading,
+                                    endPoint: .trailing
+                                )
+                            )
                             .cornerRadius(30)
                         }
                 }
                 
                 Button {
-                    print("Enable")
+                    viewModel.cancelButtonAction()
                 } label: {
                     Text("Cancel")
                         .frame(width: 185, height: 50)
                         .foregroundColor(Color(uiColor: Asset.Colors.cancelButton.color))
                 }
             }
+        }
+        .fullScreenCover(isPresented: $viewModel.alertPermissions) {
+            PermissionsAlertView(closeAction: $viewModel.alertPermissions)
         }
     }
 }

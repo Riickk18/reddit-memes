@@ -7,7 +7,18 @@
 
 import Foundation
 
-struct LinkFlairRichtextModel: Codable {
-    var e: String?
-    var t: String?
+struct LinkFlairRichtextModel: Decodable {
+    var type: String?
+    var category: String?
+
+    private enum CodingKeys: String, CodingKey {
+        case type = "e"
+        case category = "t"
+    }
+
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        type = try? container.decodeIfPresent(String.self, forKey: .type)
+        category = try? container.decodeIfPresent(String.self, forKey: .category)
+    }
 }

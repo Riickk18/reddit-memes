@@ -22,6 +22,12 @@
 		AB9043432A0B57DF00D50E90 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB9043452A0B57DF00D50E90 /* Localizable.strings */; };
 		AB9043472A0B58DD00D50E90 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9043462A0B58DD00D50E90 /* Strings+Generated.swift */; };
 		AB90434A2A0B605000D50E90 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9043492A0B605000D50E90 /* LocationManager.swift */; };
+		AB90434D2A0BEF6100D50E90 /* PermissionsAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB90434C2A0BEF6100D50E90 /* PermissionsAlertView.swift */; };
+		AB9043502A0BF49100D50E90 /* GradientBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB90434F2A0BF49100D50E90 /* GradientBackgroundView.swift */; };
+		AB9043542A0BFE3800D50E90 /* MemeCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9043532A0BFE3800D50E90 /* MemeCellView.swift */; };
+		AB9043562A0BFE9200D50E90 /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9043552A0BFE9200D50E90 /* RemoteImageView.swift */; };
+		AB90435A2A0C010D00D50E90 /* Image+Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9043592A0C010D00D50E90 /* Image+Modifiers.swift */; };
+		AB90435E2A0C321300D50E90 /* MemeCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB90435D2A0C321300D50E90 /* MemeCellViewModel.swift */; };
 		AB9043622A0C358200D50E90 /* NetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9043612A0C358200D50E90 /* NetworkHandler.swift */; };
 		AB9043642A0C365400D50E90 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9043632A0C365400D50E90 /* HTTPMethod.swift */; };
 		AB9043662A0C395D00D50E90 /* MemeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9043652A0C395D00D50E90 /* MemeModel.swift */; };
@@ -74,6 +80,12 @@
 		AB9043442A0B57DF00D50E90 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AB9043462A0B58DD00D50E90 /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
 		AB9043492A0B605000D50E90 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		AB90434C2A0BEF6100D50E90 /* PermissionsAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsAlertView.swift; sourceTree = "<group>"; };
+		AB90434F2A0BF49100D50E90 /* GradientBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackgroundView.swift; sourceTree = "<group>"; };
+		AB9043532A0BFE3800D50E90 /* MemeCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeCellView.swift; sourceTree = "<group>"; };
+		AB9043552A0BFE9200D50E90 /* RemoteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
+		AB9043592A0C010D00D50E90 /* Image+Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Modifiers.swift"; sourceTree = "<group>"; };
+		AB90435D2A0C321300D50E90 /* MemeCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeCellViewModel.swift; sourceTree = "<group>"; };
 		AB9043612A0C358200D50E90 /* NetworkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHandler.swift; sourceTree = "<group>"; };
 		AB9043632A0C365400D50E90 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		AB9043652A0C395D00D50E90 /* MemeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeModel.swift; sourceTree = "<group>"; };
@@ -162,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				ABAABA662A0B3A090012790F /* Info.plist */,
+				AB9043572A0C00F100D50E90 /* Commons */,
 				AB9043482A0B603B00D50E90 /* Utility */,
 				ABAABA652A0B37120012790F /* Resources */,
 				AB9043602A0C345100D50E90 /* Networking */,
@@ -194,6 +207,7 @@
 		AB9043392A0B4DE600D50E90 /* Permissions */ = {
 			isa = PBXGroup;
 			children = (
+				AB90434B2A0BEF4900D50E90 /* PermissionsAlert */,
 				AB90433A2A0B4E4F00D50E90 /* PermissionsMainView.swift */,
 				AB90433C2A0B4EDB00D50E90 /* PermissionsView.swift */,
 			);
@@ -211,9 +225,75 @@
 		AB9043482A0B603B00D50E90 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				AB90434E2A0BF44500D50E90 /* View */,
 				AB9043492A0B605000D50E90 /* LocationManager.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		AB90434B2A0BEF4900D50E90 /* PermissionsAlert */ = {
+			isa = PBXGroup;
+			children = (
+				AB90434C2A0BEF6100D50E90 /* PermissionsAlertView.swift */,
+			);
+			path = PermissionsAlert;
+			sourceTree = "<group>";
+		};
+		AB90434E2A0BF44500D50E90 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB90434F2A0BF49100D50E90 /* GradientBackgroundView.swift */,
+				AB9043552A0BFE9200D50E90 /* RemoteImageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AB9043512A0BFDD400D50E90 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AB9043522A0BFDDA00D50E90 /* MemeCell */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AB9043522A0BFDDA00D50E90 /* MemeCell */ = {
+			isa = PBXGroup;
+			children = (
+				AB9043532A0BFE3800D50E90 /* MemeCellView.swift */,
+			);
+			path = MemeCell;
+			sourceTree = "<group>";
+		};
+		AB9043572A0C00F100D50E90 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				AB9043582A0C00F800D50E90 /* Modifiers */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		AB9043582A0C00F800D50E90 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				AB9043592A0C010D00D50E90 /* Image+Modifiers.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		AB90435B2A0C320000D50E90 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AB90435C2A0C320500D50E90 /* MemeCell */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AB90435C2A0C320500D50E90 /* MemeCell */ = {
+			isa = PBXGroup;
+			children = (
+				AB90435D2A0C321300D50E90 /* MemeCellViewModel.swift */,
+			);
+			path = MemeCell;
 			sourceTree = "<group>";
 		};
 		AB9043602A0C345100D50E90 /* Networking */ = {
@@ -239,6 +319,7 @@
 		ABAABA632A0B37060012790F /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				AB90435B2A0C320000D50E90 /* Home */,
 				AB90433E2A0B512400D50E90 /* Permissions */,
 			);
 			path = ViewModel;
@@ -247,6 +328,7 @@
 		ABAABA642A0B370D0012790F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AB9043512A0BFDD400D50E90 /* Home */,
 				AB9043392A0B4DE600D50E90 /* Permissions */,
 				ABAABA672A0B3C3A0012790F /* LaunchScreen */,
 			);
@@ -298,6 +380,7 @@
 				AB80664A2A0B1955008E3251 /* Sources */,
 				AB80664B2A0B1955008E3251 /* Frameworks */,
 				AB80664C2A0B1955008E3251 /* Resources */,
+				682F3F80F7E186F07A98930D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -335,6 +418,7 @@
 				AB8066642A0B1956008E3251 /* Sources */,
 				AB8066652A0B1956008E3251 /* Frameworks */,
 				AB8066662A0B1956008E3251 /* Resources */,
+				64EFDEA7A84E73E9543E8415 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -462,6 +546,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		64EFDEA7A84E73E9543E8415 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-riickk18-reddit-memes-riickk18-reddit-memesUITests/Pods-riickk18-reddit-memes-riickk18-reddit-memesUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-riickk18-reddit-memes-riickk18-reddit-memesUITests/Pods-riickk18-reddit-memes-riickk18-reddit-memesUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-riickk18-reddit-memes-riickk18-reddit-memesUITests/Pods-riickk18-reddit-memes-riickk18-reddit-memesUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		682F3F80F7E186F07A98930D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-riickk18-reddit-memes/Pods-riickk18-reddit-memes-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-riickk18-reddit-memes/Pods-riickk18-reddit-memes-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-riickk18-reddit-memes/Pods-riickk18-reddit-memes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		695E10AECBEAA067AA4B4109 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -529,13 +647,19 @@
 			files = (
 				AB90436A2A0C3B3E00D50E90 /* FetchMemeDataModel.swift in Sources */,
 				AB8066522A0B1955008E3251 /* riickk18_reddit_memesApp.swift in Sources */,
+				AB90434D2A0BEF6100D50E90 /* PermissionsAlertView.swift in Sources */,
 				AB9043402A0B517700D50E90 /* PermissionsViewModel.swift in Sources */,
 				AB90433B2A0B4E4F00D50E90 /* PermissionsMainView.swift in Sources */,
+				AB90435E2A0C321300D50E90 /* MemeCellViewModel.swift in Sources */,
 				ABAABA692A0B3C4F0012790F /* LaunchScreen.swift in Sources */,
+				AB90435A2A0C010D00D50E90 /* Image+Modifiers.swift in Sources */,
+				AB9043502A0BF49100D50E90 /* GradientBackgroundView.swift in Sources */,
+				AB9043542A0BFE3800D50E90 /* MemeCellView.swift in Sources */,
 				AB90434A2A0B605000D50E90 /* LocationManager.swift in Sources */,
 				AB90436C2A0C3BD900D50E90 /* MemeModelObject.swift in Sources */,
 				AB9043472A0B58DD00D50E90 /* Strings+Generated.swift in Sources */,
 				AB90433D2A0B4EDB00D50E90 /* PermissionsView.swift in Sources */,
+				AB9043562A0BFE9200D50E90 /* RemoteImageView.swift in Sources */,
 				AB9043682A0C3B1200D50E90 /* LinkFlairRichtextModel.swift in Sources */,
 				AB9043662A0C395D00D50E90 /* MemeModel.swift in Sources */,
 				AB75E3222A0B4500005AC812 /* XCAssets+Generated.swift in Sources */,

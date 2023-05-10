@@ -7,10 +7,10 @@
 
 import Foundation
 
-struct FetchMemeModel: Codable {
+struct FetchMemeModel: Decodable {
     var data: FetchMemeDataModel
     
-    struct FetchMemeDataModel: Codable {
+    struct FetchMemeDataModel: Decodable {
         var after: String?
         var children: [MemeModelObject]
     }
