@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4oa-3O-rbG">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" image="launch-background" translatesAutoresizingMaskIntoConstraints="NO" id="Ce7-mQ-rRx">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="446"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch-background" translatesAutoresizingMaskIntoConstraints="NO" id="YKS-Ko-jLw">
+                                        <rect key="frame" x="0.0" y="446" width="393" height="406"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reddit-icon" translatesAutoresizingMaskIntoConstraints="NO" id="QTQ-tr-2o3">
+                                <rect key="frame" x="97.666666666666686" y="394" width="198" height="64"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JI9-AN-zvp">
+                                <rect key="frame" x="132.66666666666666" y="737.66666666666663" width="127.99999999999997" height="80.333333333333371"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchscreen" translatesAutoresizingMaskIntoConstraints="NO" id="n8J-br-yZO">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="60"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Richard Pacheco" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uOv-G8-B0u">
+                                        <rect key="frame" x="0.0" y="60.000000000000007" width="128" height="20.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="4oa-3O-rbG" secondAttribute="trailing" id="7YU-PB-kHD"/>
+                            <constraint firstItem="QTQ-tr-2o3" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="LWv-FO-OQu"/>
+                            <constraint firstItem="4oa-3O-rbG" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="W4c-uQ-O8V"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="JI9-AN-zvp" secondAttribute="bottom" id="bZ3-pa-Ppr"/>
+                            <constraint firstAttribute="bottom" secondItem="4oa-3O-rbG" secondAttribute="bottom" id="by6-cp-qLN"/>
+                            <constraint firstItem="QTQ-tr-2o3" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="hjF-p5-Wqi"/>
+                            <constraint firstItem="4oa-3O-rbG" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" id="jYe-HU-Onz"/>
+                            <constraint firstItem="JI9-AN-zvp" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="qW8-Cj-zZM"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.671755725190835" y="374.64788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="launch-background" width="375" height="406"/>
+        <image name="launchscreen" width="60" height="60"/>
+        <image name="reddit-icon" width="198" height="64"/>
+    </resources>
+</document>

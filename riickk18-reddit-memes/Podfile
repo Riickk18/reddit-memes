@@ -7,6 +7,7 @@ target 'riickk18-reddit-memes' do
 
   # Pods for riickk18-reddit-memes
   pod 'SwiftLint'
+  pod 'SwiftGen', '~> 6.4.0'
 
   target 'riickk18-reddit-memesTests' do
     inherit! :search_paths
