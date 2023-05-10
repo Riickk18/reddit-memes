@@ -4,7 +4,7 @@
 //
 //  Created by Richard Pacheco on 5/9/23.
 //
-
+// swiftlint:disable type_name
 import SwiftUI
 
 @main
@@ -15,3 +15,4 @@ struct riickk18_reddit_memesApp: App {
         }
     }
 }
+// swiftlint:enable type_name
