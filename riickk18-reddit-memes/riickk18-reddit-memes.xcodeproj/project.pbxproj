@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB8066522A0B1955008E3251 /* riickk18_reddit_memesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8066512A0B1955008E3251 /* riickk18_reddit_memesApp.swift */; };
+		AB8066542A0B1955008E3251 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8066532A0B1955008E3251 /* ContentView.swift */; };
+		AB8066562A0B1956008E3251 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB8066552A0B1956008E3251 /* Assets.xcassets */; };
+		AB8066592A0B1956008E3251 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB8066582A0B1956008E3251 /* Preview Assets.xcassets */; };
+		AB8066632A0B1956008E3251 /* riickk18_reddit_memesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8066622A0B1956008E3251 /* riickk18_reddit_memesTests.swift */; };
+		AB80666D2A0B1956008E3251 /* riickk18_reddit_memesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80666C2A0B1956008E3251 /* riickk18_reddit_memesUITests.swift */; };
+		AB80666F2A0B1956008E3251 /* riickk18_reddit_memesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80666E2A0B1956008E3251 /* riickk18_reddit_memesUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB80665F2A0B1956008E3251 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB8066462A0B1955008E3251 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB80664D2A0B1955008E3251;
+			remoteInfo = "riickk18-reddit-memes";
+		};
+		AB8066692A0B1956008E3251 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB8066462A0B1955008E3251 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB80664D2A0B1955008E3251;
+			remoteInfo = "riickk18-reddit-memes";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AB80664E2A0B1955008E3251 /* riickk18-reddit-memes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "riickk18-reddit-memes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB8066512A0B1955008E3251 /* riickk18_reddit_memesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = riickk18_reddit_memesApp.swift; sourceTree = "<group>"; };
+		AB8066532A0B1955008E3251 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AB8066552A0B1956008E3251 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB8066582A0B1956008E3251 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AB80665E2A0B1956008E3251 /* riickk18-reddit-memesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "riickk18-reddit-memesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB8066622A0B1956008E3251 /* riickk18_reddit_memesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = riickk18_reddit_memesTests.swift; sourceTree = "<group>"; };
+		AB8066682A0B1956008E3251 /* riickk18-reddit-memesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "riickk18-reddit-memesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB80666C2A0B1956008E3251 /* riickk18_reddit_memesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = riickk18_reddit_memesUITests.swift; sourceTree = "<group>"; };
+		AB80666E2A0B1956008E3251 /* riickk18_reddit_memesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = riickk18_reddit_memesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB80664B2A0B1955008E3251 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB80665B2A0B1956008E3251 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB8066652A0B1956008E3251 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB8066452A0B1955008E3251 = {
+			isa = PBXGroup;
+			children = (
+				AB8066502A0B1955008E3251 /* riickk18-reddit-memes */,
+				AB8066612A0B1956008E3251 /* riickk18-reddit-memesTests */,
+				AB80666B2A0B1956008E3251 /* riickk18-reddit-memesUITests */,
+				AB80664F2A0B1955008E3251 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB80664F2A0B1955008E3251 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB80664E2A0B1955008E3251 /* riickk18-reddit-memes.app */,
+				AB80665E2A0B1956008E3251 /* riickk18-reddit-memesTests.xctest */,
+				AB8066682A0B1956008E3251 /* riickk18-reddit-memesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB8066502A0B1955008E3251 /* riickk18-reddit-memes */ = {
+			isa = PBXGroup;
+			children = (
+				AB8066512A0B1955008E3251 /* riickk18_reddit_memesApp.swift */,
+				AB8066532A0B1955008E3251 /* ContentView.swift */,
+				AB8066552A0B1956008E3251 /* Assets.xcassets */,
+				AB8066572A0B1956008E3251 /* Preview Content */,
+			);
+			path = "riickk18-reddit-memes";
+			sourceTree = "<group>";
+		};
+		AB8066572A0B1956008E3251 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AB8066582A0B1956008E3251 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AB8066612A0B1956008E3251 /* riickk18-reddit-memesTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB8066622A0B1956008E3251 /* riickk18_reddit_memesTests.swift */,
+			);
+			path = "riickk18-reddit-memesTests";
+			sourceTree = "<group>";
+		};
+		AB80666B2A0B1956008E3251 /* riickk18-reddit-memesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AB80666C2A0B1956008E3251 /* riickk18_reddit_memesUITests.swift */,
+				AB80666E2A0B1956008E3251 /* riickk18_reddit_memesUITestsLaunchTests.swift */,
+			);
+			path = "riickk18-reddit-memesUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB80664D2A0B1955008E3251 /* riickk18-reddit-memes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB8066722A0B1956008E3251 /* Build configuration list for PBXNativeTarget "riickk18-reddit-memes" */;
+			buildPhases = (
+				AB80664A2A0B1955008E3251 /* Sources */,
+				AB80664B2A0B1955008E3251 /* Frameworks */,
+				AB80664C2A0B1955008E3251 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "riickk18-reddit-memes";
+			productName = "riickk18-reddit-memes";
+			productReference = AB80664E2A0B1955008E3251 /* riickk18-reddit-memes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AB80665D2A0B1956008E3251 /* riickk18-reddit-memesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB8066752A0B1956008E3251 /* Build configuration list for PBXNativeTarget "riickk18-reddit-memesTests" */;
+			buildPhases = (
+				AB80665A2A0B1956008E3251 /* Sources */,
+				AB80665B2A0B1956008E3251 /* Frameworks */,
+				AB80665C2A0B1956008E3251 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB8066602A0B1956008E3251 /* PBXTargetDependency */,
+			);
+			name = "riickk18-reddit-memesTests";
+			productName = "riickk18-reddit-memesTests";
+			productReference = AB80665E2A0B1956008E3251 /* riickk18-reddit-memesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AB8066672A0B1956008E3251 /* riickk18-reddit-memesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB8066782A0B1956008E3251 /* Build configuration list for PBXNativeTarget "riickk18-reddit-memesUITests" */;
+			buildPhases = (
+				AB8066642A0B1956008E3251 /* Sources */,
+				AB8066652A0B1956008E3251 /* Frameworks */,
+				AB8066662A0B1956008E3251 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB80666A2A0B1956008E3251 /* PBXTargetDependency */,
+			);
+			name = "riickk18-reddit-memesUITests";
+			productName = "riickk18-reddit-memesUITests";
+			productReference = AB8066682A0B1956008E3251 /* riickk18-reddit-memesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB8066462A0B1955008E3251 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					AB80664D2A0B1955008E3251 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					AB80665D2A0B1956008E3251 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = AB80664D2A0B1955008E3251;
+					};
+					AB8066672A0B1956008E3251 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = AB80664D2A0B1955008E3251;
+					};
+				};
+			};
+			buildConfigurationList = AB8066492A0B1955008E3251 /* Build configuration list for PBXProject "riickk18-reddit-memes" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB8066452A0B1955008E3251;
+			productRefGroup = AB80664F2A0B1955008E3251 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB80664D2A0B1955008E3251 /* riickk18-reddit-memes */,
+				AB80665D2A0B1956008E3251 /* riickk18-reddit-memesTests */,
+				AB8066672A0B1956008E3251 /* riickk18-reddit-memesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB80664C2A0B1955008E3251 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB8066592A0B1956008E3251 /* Preview Assets.xcassets in Resources */,
+				AB8066562A0B1956008E3251 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB80665C2A0B1956008E3251 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB8066662A0B1956008E3251 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB80664A2A0B1955008E3251 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB8066542A0B1955008E3251 /* ContentView.swift in Sources */,
+				AB8066522A0B1955008E3251 /* riickk18_reddit_memesApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB80665A2A0B1956008E3251 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB8066632A0B1956008E3251 /* riickk18_reddit_memesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB8066642A0B1956008E3251 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB80666F2A0B1956008E3251 /* riickk18_reddit_memesUITestsLaunchTests.swift in Sources */,
+				AB80666D2A0B1956008E3251 /* riickk18_reddit_memesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB8066602A0B1956008E3251 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB80664D2A0B1955008E3251 /* riickk18-reddit-memes */;
+			targetProxy = AB80665F2A0B1956008E3251 /* PBXContainerItemProxy */;
+		};
+		AB80666A2A0B1956008E3251 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB80664D2A0B1955008E3251 /* riickk18-reddit-memes */;
+			targetProxy = AB8066692A0B1956008E3251 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AB8066702A0B1956008E3251 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AB8066712A0B1956008E3251 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB8066732A0B1956008E3251 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"riickk18-reddit-memes/Preview Content\"";
+				DEVELOPMENT_TEAM = DWHPM2LNZ4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "richardorlan95.riickk18-reddit-memes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AB8066742A0B1956008E3251 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"riickk18-reddit-memes/Preview Content\"";
+				DEVELOPMENT_TEAM = DWHPM2LNZ4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "richardorlan95.riickk18-reddit-memes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AB8066762A0B1956008E3251 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DWHPM2LNZ4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "richardorlan95.riickk18-reddit-memesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/riickk18-reddit-memes.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/riickk18-reddit-memes";
+			};
+			name = Debug;
+		};
+		AB8066772A0B1956008E3251 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DWHPM2LNZ4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "richardorlan95.riickk18-reddit-memesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/riickk18-reddit-memes.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/riickk18-reddit-memes";
+			};
+			name = Release;
+		};
+		AB8066792A0B1956008E3251 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DWHPM2LNZ4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "richardorlan95.riickk18-reddit-memesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "riickk18-reddit-memes";
+			};
+			name = Debug;
+		};
+		AB80667A2A0B1956008E3251 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DWHPM2LNZ4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "richardorlan95.riickk18-reddit-memesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "riickk18-reddit-memes";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB8066492A0B1955008E3251 /* Build configuration list for PBXProject "riickk18-reddit-memes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB8066702A0B1956008E3251 /* Debug */,
+				AB8066712A0B1956008E3251 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB8066722A0B1956008E3251 /* Build configuration list for PBXNativeTarget "riickk18-reddit-memes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB8066732A0B1956008E3251 /* Debug */,
+				AB8066742A0B1956008E3251 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB8066752A0B1956008E3251 /* Build configuration list for PBXNativeTarget "riickk18-reddit-memesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB8066762A0B1956008E3251 /* Debug */,
+				AB8066772A0B1956008E3251 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB8066782A0B1956008E3251 /* Build configuration list for PBXNativeTarget "riickk18-reddit-memesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB8066792A0B1956008E3251 /* Debug */,
+				AB80667A2A0B1956008E3251 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB8066462A0B1955008E3251 /* Project object */;
+}
