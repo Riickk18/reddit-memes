@@ -13,18 +13,18 @@ struct MemeCellView: View {
     var body: some View {
         VStack {
             ZStack(alignment: .bottom) {
-                RemoteImageView(url: "https://picsum.photos/600/600"
+                RemoteImageView(url: viewModel.image
                 )
                     .frame(height: 209)
                 VStack {
                     Spacer()
                         .frame(height: 15)
-                    HStack {
+                    HStack { // writer data
                         RemoteImageView(url: "https://picsum.photos/700/700"
                         )
                         .frame(width: 30, height: 30)
                         .cornerRadius(15)
-                        Text("Jeremiah Bridges")
+                        Text(viewModel.ownerName ?? "")
                             .foregroundColor(.white)
                         Spacer()
                     }
@@ -46,9 +46,9 @@ struct MemeCellView: View {
                 .frame(height: 17)
             
             VStack(alignment: .leading, spacing: 9) {
-                Text("Writing A Good Headline For Your Advertisement")
+                Text(viewModel.title ?? "")
                     .font(.title2)
-                Text("These tips come from the safety experts at Voith Turbo, York, Pa., which manufactures a device that helps trains with braking, to make train travel even better. ")
+                Text(viewModel.description ?? "")
             }
             .foregroundColor(.black)
             .padding(.horizontal, 20)
@@ -107,6 +107,6 @@ struct MemeCellView: View {
 
 struct MemeCellView_Previews: PreviewProvider {
     static var previews: some View {
-        MemeCellView(viewModel: MemeCellViewModel())
+        MemeCellView(viewModel: MemeCellViewModel(memeObject: MemeModel()))
     }
 }
