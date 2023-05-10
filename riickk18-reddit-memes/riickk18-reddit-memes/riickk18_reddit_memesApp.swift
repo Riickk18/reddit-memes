@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct riickk18_reddit_memesApp: App {
+    @AppStorage("permissionsWasCompleted", store: .standard) var permissionsWasCompleted: Bool = false
+
     var body: some Scene {
         WindowGroup {
-            PermissionsView(viewModel: PermissionsViewModel())
+            if permissionsWasCompleted {
+                EmptyView()
+            } else {
+                PermissionsView(viewModel: PermissionsViewModel())
+            }
         }
     }
 }
