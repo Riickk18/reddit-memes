@@ -1,6 +1,0 @@
-framework module Pods_riickk18_reddit_memes_riickk18_reddit_memesUITests {
-  umbrella header "Pods-riickk18-reddit-memes-riickk18-reddit-memesUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
