@@ -4,6 +4,7 @@
 //
 //  Created by Richard Pacheco on 5/9/23.
 //
+// swiftlint:disable type_name
 
 import XCTest
 
@@ -15,7 +16,8 @@ final class riickk18_reddit_memesUITests: XCTestCase {
         // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
 
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+        // In UI tests it’s important to set the initial state - such as interface orientation -
+        // required for your tests before they run. The setUp method is a good place to do this.
     }
 
     override func tearDownWithError() throws {
@@ -39,3 +41,4 @@ final class riickk18_reddit_memesUITests: XCTestCase {
         }
     }
 }
+// swiftlint:enable type_name

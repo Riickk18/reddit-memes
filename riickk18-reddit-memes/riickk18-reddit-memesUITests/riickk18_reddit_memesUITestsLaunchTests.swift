@@ -4,6 +4,7 @@
 //
 //  Created by Richard Pacheco on 5/9/23.
 //
+// swiftlint:disable type_name
 
 import XCTest
 
@@ -30,3 +31,4 @@ final class riickk18_reddit_memesUITestsLaunchTests: XCTestCase {
         add(attachment)
     }
 }
+// swiftlint:enable type_name

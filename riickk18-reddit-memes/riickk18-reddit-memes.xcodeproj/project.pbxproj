@@ -12,7 +12,6 @@
 		AB8066522A0B1955008E3251 /* riickk18_reddit_memesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8066512A0B1955008E3251 /* riickk18_reddit_memesApp.swift */; };
 		AB8066542A0B1955008E3251 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8066532A0B1955008E3251 /* ContentView.swift */; };
 		AB8066562A0B1956008E3251 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB8066552A0B1956008E3251 /* Assets.xcassets */; };
-		AB8066592A0B1956008E3251 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB8066582A0B1956008E3251 /* Preview Assets.xcassets */; };
 		AB8066632A0B1956008E3251 /* riickk18_reddit_memesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8066622A0B1956008E3251 /* riickk18_reddit_memesTests.swift */; };
 		AB80666D2A0B1956008E3251 /* riickk18_reddit_memesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80666C2A0B1956008E3251 /* riickk18_reddit_memesUITests.swift */; };
 		AB80666F2A0B1956008E3251 /* riickk18_reddit_memesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80666E2A0B1956008E3251 /* riickk18_reddit_memesUITestsLaunchTests.swift */; };
@@ -48,7 +47,6 @@
 		AB8066512A0B1955008E3251 /* riickk18_reddit_memesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = riickk18_reddit_memesApp.swift; sourceTree = "<group>"; };
 		AB8066532A0B1955008E3251 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AB8066552A0B1956008E3251 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AB8066582A0B1956008E3251 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AB80665E2A0B1956008E3251 /* riickk18-reddit-memesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "riickk18-reddit-memesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB8066622A0B1956008E3251 /* riickk18_reddit_memesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = riickk18_reddit_memesTests.swift; sourceTree = "<group>"; };
 		AB8066682A0B1956008E3251 /* riickk18-reddit-memesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "riickk18-reddit-memesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,20 +119,13 @@
 		AB8066502A0B1955008E3251 /* riickk18-reddit-memes */ = {
 			isa = PBXGroup;
 			children = (
+				ABAABA652A0B37120012790F /* Resources */,
+				ABAABA622A0B36FD0012790F /* Model */,
+				ABAABA632A0B37060012790F /* ViewModel */,
+				ABAABA642A0B370D0012790F /* View */,
 				AB8066512A0B1955008E3251 /* riickk18_reddit_memesApp.swift */,
-				AB8066532A0B1955008E3251 /* ContentView.swift */,
-				AB8066552A0B1956008E3251 /* Assets.xcassets */,
-				AB8066572A0B1956008E3251 /* Preview Content */,
 			);
 			path = "riickk18-reddit-memes";
-			sourceTree = "<group>";
-		};
-		AB8066572A0B1956008E3251 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				AB8066582A0B1956008E3251 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		AB8066612A0B1956008E3251 /* riickk18-reddit-memesTests */ = {
@@ -152,6 +143,36 @@
 				AB80666E2A0B1956008E3251 /* riickk18_reddit_memesUITestsLaunchTests.swift */,
 			);
 			path = "riickk18-reddit-memesUITests";
+			sourceTree = "<group>";
+		};
+		ABAABA622A0B36FD0012790F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ABAABA632A0B37060012790F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ABAABA642A0B370D0012790F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB8066532A0B1955008E3251 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ABAABA652A0B37120012790F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AB8066552A0B1956008E3251 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		D85865BAD34695A6C0D843F8 /* Pods */ = {
@@ -275,7 +296,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB8066592A0B1956008E3251 /* Preview Assets.xcassets in Resources */,
 				AB8066562A0B1956008E3251 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
