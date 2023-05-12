@@ -29,19 +29,19 @@ struct MemeDetailView: View {
 
             Spacer()
                 .frame(height: 76)
-            
+
             Text(viewModel.title ?? "")
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .foregroundColor(.white)
                 .font(.largeTitle)
                 .fontWeight(.semibold)
                 .padding(.bottom, 22)
-            
+
             Text(viewModel.description ?? "")
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .foregroundColor(.white)
                 .font(.body)
-            
+
             HStack(spacing: 5) {
                 ForEach((0..<viewModel.people.count), id: \.self) { index in
                     viewModel.people[index]
@@ -57,10 +57,9 @@ struct MemeDetailView: View {
                     )
                     .padding(.leading, 5)
             }
-            
-            
+
             Spacer()
-            
+
             HStack(spacing: 28) {
                 Button {
                     print("Like")
@@ -71,7 +70,7 @@ struct MemeDetailView: View {
                         Text("\(viewModel.likeCounter ?? 0)")
                     }
                 }
-                
+
                 Button {
                     print("Comment")
                 } label: {
@@ -83,10 +82,10 @@ struct MemeDetailView: View {
                 }
             }
             .foregroundColor(.white)
-            
+
             Spacer()
                 .frame(height: 29)
-            
+
         }
         .padding(.horizontal, 31)
         .background {
