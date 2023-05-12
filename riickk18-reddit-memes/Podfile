@@ -1,0 +1,23 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '16.0'
+
+target 'riickk18-reddit-memes' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for riickk18-reddit-memes
+  pod 'SwiftLint'
+  pod 'SwiftGen', '~> 6.4.0'
+  pod 'NukeUI'
+  pod 'ExytePopupView', '~> 1.2.1'
+
+  target 'riickk18-reddit-memesTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'riickk18-reddit-memesUITests' do
+    # Pods for testing
+  end
+
+end
