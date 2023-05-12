@@ -28,7 +28,6 @@
 		AB90435A2A0C010D00D50E90 /* Image+Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9043592A0C010D00D50E90 /* Image+Modifiers.swift */; };
 		AB90435E2A0C321300D50E90 /* MemeCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB90435D2A0C321300D50E90 /* MemeCellViewModel.swift */; };
 		AB9043622A0C358200D50E90 /* NetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9043612A0C358200D50E90 /* NetworkHandler.swift */; };
-		AB9043642A0C365400D50E90 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9043632A0C365400D50E90 /* HTTPMethod.swift */; };
 		AB9043662A0C395D00D50E90 /* MemeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9043652A0C395D00D50E90 /* MemeModel.swift */; };
 		AB9043682A0C3B1200D50E90 /* LinkFlairRichtextModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9043672A0C3B1200D50E90 /* LinkFlairRichtextModel.swift */; };
 		AB90436A2A0C3B3E00D50E90 /* FetchMemeDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9043692A0C3B3D00D50E90 /* FetchMemeDataModel.swift */; };
@@ -94,7 +93,6 @@
 		AB9043592A0C010D00D50E90 /* Image+Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Modifiers.swift"; sourceTree = "<group>"; };
 		AB90435D2A0C321300D50E90 /* MemeCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeCellViewModel.swift; sourceTree = "<group>"; };
 		AB9043612A0C358200D50E90 /* NetworkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHandler.swift; sourceTree = "<group>"; };
-		AB9043632A0C365400D50E90 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		AB9043652A0C395D00D50E90 /* MemeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeModel.swift; sourceTree = "<group>"; };
 		AB9043672A0C3B1200D50E90 /* LinkFlairRichtextModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkFlairRichtextModel.swift; sourceTree = "<group>"; };
 		AB9043692A0C3B3D00D50E90 /* FetchMemeDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchMemeDataModel.swift; sourceTree = "<group>"; };
@@ -319,7 +317,6 @@
 			isa = PBXGroup;
 			children = (
 				AB9043612A0C358200D50E90 /* NetworkHandler.swift */,
-				AB9043632A0C365400D50E90 /* HTTPMethod.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -716,7 +713,6 @@
 				AB9043682A0C3B1200D50E90 /* LinkFlairRichtextModel.swift in Sources */,
 				AB9043662A0C395D00D50E90 /* MemeModel.swift in Sources */,
 				AB75E3222A0B4500005AC812 /* XCAssets+Generated.swift in Sources */,
-				AB9043642A0C365400D50E90 /* HTTPMethod.swift in Sources */,
 				AB9043792A0D40EE00D50E90 /* LoaderView.swift in Sources */,
 				AB9043772A0CF9E600D50E90 /* View+Extensions.swift in Sources */,
 				AB90437B2A0D44BC00D50E90 /* NoSearchResultsView.swift in Sources */,

@@ -20,11 +20,15 @@ class HomeViewModel: ObservableObject {
         }
     }
 
+    /// Elements for filtering posts
     enum DataTypeToFilter: String {
         case shitposting = "Shitposting"
         case image
     }
 
+    /// Update array of elements with animation and hide loading view
+    /// - Parameters:
+    ///   - newElements: array of MemeCellView elements
     private func updateElementsWithAnimation(newElements: [MemeCellView]) async {
         await MainActor.run {
             withAnimation {
@@ -40,6 +44,10 @@ class HomeViewModel: ObservableObject {
         }
     }
 
+    /// Filter elements by linkFlairText and postHint, where contains "Shitposting" and "image" respectively
+    /// - Parameters:
+    ///   - elements: object that contains memes
+    /// - Returns: array of MemeCellView filtered
     private func filterElements(elements: FetchMemeModel?) async -> [MemeCellView] {
         var arrayOfMemes = [MemeCellView]()
         elements?
@@ -58,6 +66,7 @@ class HomeViewModel: ObservableObject {
         return arrayOfMemes
     }
 
+    /// Filter elements by linkFlairText and postHint, where contains "Shitposting" and "image" respectively
     func getInitialData(withoutLoading: Bool = false) async {
         do {
             if withoutLoading {
@@ -87,6 +96,9 @@ class HomeViewModel: ObservableObject {
         }
     }
 
+    /// Search elements by text typed by user
+    /// - Parameters:
+    ///   - text: string typed by user
     func searchMemesWithQuery(text: String) async throws -> [MemeCellView] {
         let networkHandler = NetworkHandler()
         let memeModelResponse = try await networkHandler.searchMemesBy(text: text)
@@ -94,7 +106,9 @@ class HomeViewModel: ObservableObject {
         return await filterElements(elements: memeModelResponse)
     }
 
-    // MARK: - PAGINATION
+    /// Get next page of data, evaluating index of last visible element
+    /// - Parameters:
+    ///   - currentItem: last visible element
     func loadMoreContent(currentItem item: MemeCellView) {
         let index = elements.firstIndex(where: { $0.uuid == item.uuid }) ?? 0
         if index >= elements.count - 2 && !loadingNextPage {
@@ -118,6 +132,9 @@ class HomeViewModel: ObservableObject {
         }
     }
 
+    /// Get next page of data
+    /// - Parameters:
+    ///   - page: next page identifier
     func fetchNextMemesPage(page: String) async throws -> [MemeCellView] {
         let networkHandler = NetworkHandler()
         let memeModelResponse = try await networkHandler.fetchMemesByPage(page: page)

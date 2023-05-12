@@ -30,6 +30,7 @@ class PermissionsViewModel: ObservableObject {
         updateUIForCurrentState()
     }
 
+    /// Function to update UI elements
     private func updateUIForCurrentState() {
         DispatchQueue.main.async { [unowned self] in
             withAnimation {
@@ -51,6 +52,9 @@ class PermissionsViewModel: ObservableObject {
         }
     }
 
+    /// Action in principal button of view
+    /// - Parameters:
+    ///   - complementaryAction: completion block received from parent
     func principalButtonAction(complementaryAction: (() -> Void)?) {
         switch currentState {
         case .camera:
@@ -62,6 +66,9 @@ class PermissionsViewModel: ObservableObject {
         }
     }
 
+    /// Action in secondary button of view
+    /// - Parameters:
+    ///   - complementaryAction: completion block received from parent
     func cancelButtonAction(complementaryAction: (() -> Void)? ) {
         switch currentState {
         case .camera:
