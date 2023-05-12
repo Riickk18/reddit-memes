@@ -16,7 +16,7 @@
 
 ## About project
 
-Reddit memes has been developed with Swift 5 and Xcode 14.3
+Reddit memes has been developed with Swift 5 and Xcode 14.3, following MVVM architecture and implementation of Singleton design pattern for locations feature
 
 ## Built With
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
