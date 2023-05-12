@@ -51,26 +51,26 @@ class PermissionsViewModel: ObservableObject {
         }
     }
 
-    func principalButtonAction() {
+    func principalButtonAction(complementaryAction: (() -> Void)?) {
         switch currentState {
         case .camera:
             verifyCameraPermission()
         case .pushNotification:
             verifyPushNotificationPermission()
         case .location:
-            verifyLocationPermission()
+            verifyLocationPermission(complementaryAction: complementaryAction)
         }
     }
 
-    func cancelButtonAction() {
+    func cancelButtonAction(complementaryAction: (() -> Void)? ) {
         switch currentState {
         case .camera:
             currentState = .pushNotification
         case .pushNotification:
             currentState = .location
         case .location:
-            break
-            //debería de terminar el flujo
+            permissionsWasCompleted = true
+            complementaryAction?()
         }
     }
 
@@ -88,12 +88,7 @@ class PermissionsViewModel: ObservableObject {
 
     private func verifyPushNotificationPermission() {
         let center = UNUserNotificationCenter.current()
-        center.requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
-
-            if let error = error {
-                // Handle the error here.
-            }
-
+        center.requestAuthorization(options: [.alert, .sound, .badge]) { granted, _ in
             DispatchQueue.main.async { [unowned self] in
                 if granted {
                     self.currentState = .location
@@ -104,13 +99,15 @@ class PermissionsViewModel: ObservableObject {
         }
     }
 
-    private func verifyLocationPermission() {
+    private func verifyLocationPermission(complementaryAction: (() -> Void)?) {
         LocationManager.shared.requestLocationAuthorization(
             onRejectedAction: { [unowned self] in
                 self.alertPermissions = true
+                complementaryAction?()
             },
             onGrantedAction: {  [unowned self] in
-                //finish process
+                permissionsWasCompleted = true
+                complementaryAction?()
             }
         )
     }

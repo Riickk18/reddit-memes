@@ -16,7 +16,6 @@
 		AB8066632A0B1956008E3251 /* riickk18_reddit_memesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8066622A0B1956008E3251 /* riickk18_reddit_memesTests.swift */; };
 		AB80666D2A0B1956008E3251 /* riickk18_reddit_memesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80666C2A0B1956008E3251 /* riickk18_reddit_memesUITests.swift */; };
 		AB80666F2A0B1956008E3251 /* riickk18_reddit_memesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80666E2A0B1956008E3251 /* riickk18_reddit_memesUITestsLaunchTests.swift */; };
-		AB90433B2A0B4E4F00D50E90 /* PermissionsMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB90433A2A0B4E4F00D50E90 /* PermissionsMainView.swift */; };
 		AB90433D2A0B4EDB00D50E90 /* PermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB90433C2A0B4EDB00D50E90 /* PermissionsView.swift */; };
 		AB9043402A0B517700D50E90 /* PermissionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB90433F2A0B517700D50E90 /* PermissionsViewModel.swift */; };
 		AB9043432A0B57DF00D50E90 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB9043452A0B57DF00D50E90 /* Localizable.strings */; };
@@ -34,6 +33,15 @@
 		AB9043682A0C3B1200D50E90 /* LinkFlairRichtextModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9043672A0C3B1200D50E90 /* LinkFlairRichtextModel.swift */; };
 		AB90436A2A0C3B3E00D50E90 /* FetchMemeDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9043692A0C3B3D00D50E90 /* FetchMemeDataModel.swift */; };
 		AB90436C2A0C3BD900D50E90 /* MemeModelObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB90436B2A0C3BD900D50E90 /* MemeModelObject.swift */; };
+		AB90436E2A0CF77200D50E90 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB90436D2A0CF77200D50E90 /* HomeView.swift */; };
+		AB9043702A0CF78E00D50E90 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB90436F2A0CF78E00D50E90 /* HomeViewModel.swift */; };
+		AB9043722A0CF91500D50E90 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9043712A0CF91500D50E90 /* SearchBarView.swift */; };
+		AB9043772A0CF9E600D50E90 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9043762A0CF9E600D50E90 /* View+Extensions.swift */; };
+		AB9043792A0D40EE00D50E90 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9043782A0D40EE00D50E90 /* LoaderView.swift */; };
+		AB90437B2A0D44BC00D50E90 /* NoSearchResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB90437A2A0D44BC00D50E90 /* NoSearchResultsView.swift */; };
+		AB90437D2A0D75E400D50E90 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB90437C2A0D75E400D50E90 /* Int+Extensions.swift */; };
+		AB9043802A0D7E1200D50E90 /* MemeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB90437F2A0D7E1200D50E90 /* MemeDetailView.swift */; };
+		AB9043842A0DE5F100D50E90 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9043832A0DE5F100D50E90 /* MainView.swift */; };
 		ABAABA692A0B3C4F0012790F /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAABA682A0B3C4F0012790F /* LaunchScreen.swift */; };
 		ABAABA722A0B3F9D0012790F /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABAABA712A0B3F9D0012790F /* Colors.xcassets */; };
 		CF608AAAD13952C6B8DE1D5B /* Pods_riickk18_reddit_memes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D8C0D06EB06708A27E891C /* Pods_riickk18_reddit_memes.framework */; };
@@ -74,7 +82,6 @@
 		AB8066682A0B1956008E3251 /* riickk18-reddit-memesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "riickk18-reddit-memesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB80666C2A0B1956008E3251 /* riickk18_reddit_memesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = riickk18_reddit_memesUITests.swift; sourceTree = "<group>"; };
 		AB80666E2A0B1956008E3251 /* riickk18_reddit_memesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = riickk18_reddit_memesUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		AB90433A2A0B4E4F00D50E90 /* PermissionsMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsMainView.swift; sourceTree = "<group>"; };
 		AB90433C2A0B4EDB00D50E90 /* PermissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsView.swift; sourceTree = "<group>"; };
 		AB90433F2A0B517700D50E90 /* PermissionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsViewModel.swift; sourceTree = "<group>"; };
 		AB9043442A0B57DF00D50E90 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -92,6 +99,15 @@
 		AB9043672A0C3B1200D50E90 /* LinkFlairRichtextModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkFlairRichtextModel.swift; sourceTree = "<group>"; };
 		AB9043692A0C3B3D00D50E90 /* FetchMemeDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchMemeDataModel.swift; sourceTree = "<group>"; };
 		AB90436B2A0C3BD900D50E90 /* MemeModelObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeModelObject.swift; sourceTree = "<group>"; };
+		AB90436D2A0CF77200D50E90 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		AB90436F2A0CF78E00D50E90 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		AB9043712A0CF91500D50E90 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		AB9043762A0CF9E600D50E90 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		AB9043782A0D40EE00D50E90 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
+		AB90437A2A0D44BC00D50E90 /* NoSearchResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoSearchResultsView.swift; sourceTree = "<group>"; };
+		AB90437C2A0D75E400D50E90 /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
+		AB90437F2A0D7E1200D50E90 /* MemeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeDetailView.swift; sourceTree = "<group>"; };
+		AB9043832A0DE5F100D50E90 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		ABAABA662A0B3A090012790F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		ABAABA682A0B3C4F0012790F /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 		ABAABA6E2A0B3E7F0012790F /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = SOURCE_ROOT; };
@@ -208,7 +224,6 @@
 			isa = PBXGroup;
 			children = (
 				AB90434B2A0BEF4900D50E90 /* PermissionsAlert */,
-				AB90433A2A0B4E4F00D50E90 /* PermissionsMainView.swift */,
 				AB90433C2A0B4EDB00D50E90 /* PermissionsView.swift */,
 			);
 			path = Permissions;
@@ -244,6 +259,9 @@
 			children = (
 				AB90434F2A0BF49100D50E90 /* GradientBackgroundView.swift */,
 				AB9043552A0BFE9200D50E90 /* RemoteImageView.swift */,
+				AB9043712A0CF91500D50E90 /* SearchBarView.swift */,
+				AB9043782A0D40EE00D50E90 /* LoaderView.swift */,
+				AB90437A2A0D44BC00D50E90 /* NoSearchResultsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -251,7 +269,7 @@
 		AB9043512A0BFDD400D50E90 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				AB9043522A0BFDDA00D50E90 /* MemeCell */,
+				AB90436D2A0CF77200D50E90 /* HomeView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -267,6 +285,7 @@
 		AB9043572A0C00F100D50E90 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				AB9043752A0CF9DA00D50E90 /* Extensions */,
 				AB9043582A0C00F800D50E90 /* Modifiers */,
 			);
 			path = Commons;
@@ -283,7 +302,7 @@
 		AB90435B2A0C320000D50E90 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				AB90435C2A0C320500D50E90 /* MemeCell */,
+				AB90436F2A0CF78E00D50E90 /* HomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -305,6 +324,31 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
+		AB9043752A0CF9DA00D50E90 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AB9043762A0CF9E600D50E90 /* View+Extensions.swift */,
+				AB90437C2A0D75E400D50E90 /* Int+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AB90437E2A0D7DF100D50E90 /* MemeDetail */ = {
+			isa = PBXGroup;
+			children = (
+				AB90437F2A0D7E1200D50E90 /* MemeDetailView.swift */,
+			);
+			path = MemeDetail;
+			sourceTree = "<group>";
+		};
+		AB9043812A0DE5D900D50E90 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				AB9043832A0DE5F100D50E90 /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		ABAABA622A0B36FD0012790F /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -320,6 +364,7 @@
 			isa = PBXGroup;
 			children = (
 				AB90435B2A0C320000D50E90 /* Home */,
+				AB90435C2A0C320500D50E90 /* MemeCell */,
 				AB90433E2A0B512400D50E90 /* Permissions */,
 			);
 			path = ViewModel;
@@ -329,8 +374,11 @@
 			isa = PBXGroup;
 			children = (
 				AB9043512A0BFDD400D50E90 /* Home */,
-				AB9043392A0B4DE600D50E90 /* Permissions */,
 				ABAABA672A0B3C3A0012790F /* LaunchScreen */,
+				AB9043812A0DE5D900D50E90 /* Main */,
+				AB9043522A0BFDDA00D50E90 /* MemeCell */,
+				AB90437E2A0D7DF100D50E90 /* MemeDetail */,
+				AB9043392A0B4DE600D50E90 /* Permissions */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -646,24 +694,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB90436A2A0C3B3E00D50E90 /* FetchMemeDataModel.swift in Sources */,
+				AB9043842A0DE5F100D50E90 /* MainView.swift in Sources */,
+				AB9043702A0CF78E00D50E90 /* HomeViewModel.swift in Sources */,
 				AB8066522A0B1955008E3251 /* riickk18_reddit_memesApp.swift in Sources */,
 				AB90434D2A0BEF6100D50E90 /* PermissionsAlertView.swift in Sources */,
 				AB9043402A0B517700D50E90 /* PermissionsViewModel.swift in Sources */,
-				AB90433B2A0B4E4F00D50E90 /* PermissionsMainView.swift in Sources */,
+				AB9043722A0CF91500D50E90 /* SearchBarView.swift in Sources */,
 				AB90435E2A0C321300D50E90 /* MemeCellViewModel.swift in Sources */,
 				ABAABA692A0B3C4F0012790F /* LaunchScreen.swift in Sources */,
 				AB90435A2A0C010D00D50E90 /* Image+Modifiers.swift in Sources */,
 				AB9043502A0BF49100D50E90 /* GradientBackgroundView.swift in Sources */,
 				AB9043542A0BFE3800D50E90 /* MemeCellView.swift in Sources */,
+				AB90437D2A0D75E400D50E90 /* Int+Extensions.swift in Sources */,
 				AB90434A2A0B605000D50E90 /* LocationManager.swift in Sources */,
 				AB90436C2A0C3BD900D50E90 /* MemeModelObject.swift in Sources */,
 				AB9043472A0B58DD00D50E90 /* Strings+Generated.swift in Sources */,
 				AB90433D2A0B4EDB00D50E90 /* PermissionsView.swift in Sources */,
 				AB9043562A0BFE9200D50E90 /* RemoteImageView.swift in Sources */,
+				AB90436E2A0CF77200D50E90 /* HomeView.swift in Sources */,
+				AB9043802A0D7E1200D50E90 /* MemeDetailView.swift in Sources */,
 				AB9043682A0C3B1200D50E90 /* LinkFlairRichtextModel.swift in Sources */,
 				AB9043662A0C395D00D50E90 /* MemeModel.swift in Sources */,
 				AB75E3222A0B4500005AC812 /* XCAssets+Generated.swift in Sources */,
 				AB9043642A0C365400D50E90 /* HTTPMethod.swift in Sources */,
+				AB9043792A0D40EE00D50E90 /* LoaderView.swift in Sources */,
+				AB9043772A0CF9E600D50E90 /* View+Extensions.swift in Sources */,
+				AB90437B2A0D44BC00D50E90 /* NoSearchResultsView.swift in Sources */,
 				AB9043622A0C358200D50E90 /* NetworkHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

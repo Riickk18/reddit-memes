@@ -8,13 +8,29 @@
 import Foundation
 
 class NetworkHandler {
-    
+
     let baseURL = "https://www.reddit.com/r/chile/"
     let timeOutInterval = 30.0
     var session = URLSession.shared
 
     func fetchMemes() async throws -> FetchMemeModel? {
         let stringURL: String = baseURL + "new/.json?limit=100"
+        guard let url = URL(string: stringURL) else {return nil}
+        let (data, _) = try await session.data(from: url)
+        let decoder = JSONDecoder()
+        return try decoder.decode(FetchMemeModel.self, from: data)
+    }
+
+    func searchMemesBy(text: String) async throws -> FetchMemeModel? {
+        let stringURL: String = baseURL + "search.json?q=\(text)&limit=100"
+        guard let url = URL(string: stringURL) else {return nil}
+        let (data, _) = try await session.data(from: url)
+        let decoder = JSONDecoder()
+        return try decoder.decode(FetchMemeModel.self, from: data)
+    }
+
+    func fetchMemesByPage(page: String) async throws -> FetchMemeModel? {
+        let stringURL: String = baseURL + ".json?limit=100&after=\(page)"
         guard let url = URL(string: stringURL) else {return nil}
         let (data, _) = try await session.data(from: url)
         let decoder = JSONDecoder()

@@ -33,9 +33,9 @@ struct PermissionsAlertView: View {
                     .padding(.trailing, -10)
                     .padding(.vertical, -10)
 
-                    Text("Permission access")
+                    Text(Strings.Settings.Permissions.title)
                         .font(.title2)
-                    Text("To continue, is necessary have access to Camera, Notifications and Location. Give them to enjoy the best experience on Reddit Memes")
+                    Text(Strings.Settings.Permissions.subtitle)
                         .font(.footnote)
                         .multilineTextAlignment(.center)
                     Spacer()
@@ -43,7 +43,7 @@ struct PermissionsAlertView: View {
                     Button {
                         UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
                     } label: {
-                        Text("Go to Settings")
+                        Text(Strings.Settings.Permissions.primaryAction)
                             .frame(width: 185, height: 50)
                             .foregroundColor(.white)
                             .background(

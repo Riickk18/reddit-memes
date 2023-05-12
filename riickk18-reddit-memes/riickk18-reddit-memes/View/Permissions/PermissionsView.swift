@@ -9,27 +9,28 @@ import SwiftUI
 
 struct PermissionsView: View {
     @StateObject var viewModel: PermissionsViewModel
+    var dismissAction: (() -> Void)?
 
     var body: some View {
         VStack {
             Image(viewModel.image)
                 .padding(.bottom, 48)
-            
+
             VStack(spacing: 20) {
                 Text(viewModel.title)
                     .multilineTextAlignment(.center)
                     .font(.title)
-                
+
                 Text(viewModel.subTitle)
                     .multilineTextAlignment(.center)
                     .font(.body)
             }
             .padding(.horizontal, 64)
             .padding(.bottom, 30)
-            
+
             VStack(spacing: 20) {
                 Button {
-                    viewModel.principalButtonAction()
+                    viewModel.principalButtonAction(complementaryAction: dismissAction)
                 } label: {
                     Text("Allow")
                         .frame(width: 185, height: 50)
@@ -48,9 +49,9 @@ struct PermissionsView: View {
                             .cornerRadius(30)
                         }
                 }
-                
+
                 Button {
-                    viewModel.cancelButtonAction()
+                    viewModel.cancelButtonAction(complementaryAction: dismissAction)
                 } label: {
                     Text("Cancel")
                         .frame(width: 185, height: 50)

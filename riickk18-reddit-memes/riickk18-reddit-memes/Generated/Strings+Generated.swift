@@ -37,6 +37,17 @@ public enum Strings {
       public static let title = Strings.tr("Localizable", "PushNotification.Permission.Title")
     }
   }
+
+  public enum Settings {
+    public enum Permissions {
+      /// Go to Settings
+      public static let primaryAction = Strings.tr("Localizable", "Settings.Permissions.PrimaryAction")
+      /// To continue, is necessary have access to Camera, Notifications and Location. Give them to enjoy the best experience on Reddit Memes
+      public static let subtitle = Strings.tr("Localizable", "Settings.Permissions.Subtitle")
+      /// Permission access
+      public static let title = Strings.tr("Localizable", "Settings.Permissions.Title")
+    }
+  }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces

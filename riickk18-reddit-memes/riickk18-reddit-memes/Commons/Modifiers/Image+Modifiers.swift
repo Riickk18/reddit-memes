@@ -8,7 +8,12 @@
 import SwiftUI
 
 extension Image {
-    func styleFrameModifier(width: CGFloat, height: CGFloat, mode: ContentMode, template: Image.TemplateRenderingMode) -> some View {
+    func styleFrameModifier(
+        width: CGFloat,
+        height: CGFloat,
+        mode: ContentMode,
+        template: Image.TemplateRenderingMode
+    ) -> some View {
         self
             .renderingMode(template)
             .resizable()
