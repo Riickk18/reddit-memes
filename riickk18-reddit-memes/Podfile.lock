@@ -1,4 +1,5 @@
 PODS:
+  - ExytePopupView (1.2.1)
   - Gifu (3.3.1)
   - Nuke (10.7.1)
   - NukeUI (0.8.0):
@@ -8,12 +9,14 @@ PODS:
   - SwiftLint (0.51.0)
 
 DEPENDENCIES:
+  - ExytePopupView (~> 1.2.1)
   - NukeUI
   - SwiftGen (~> 6.4.0)
   - SwiftLint
 
 SPEC REPOS:
   trunk:
+    - ExytePopupView
     - Gifu
     - Nuke
     - NukeUI
@@ -21,12 +24,13 @@ SPEC REPOS:
     - SwiftLint
 
 SPEC CHECKSUMS:
+  ExytePopupView: e0554c9713665a386a54b356c596858811e84621
   Gifu: 416d4e38c4c2fed012f019e0a1d3ffcb58e5b842
   Nuke: 279f17a599fd1c83cf51de5e0e1f2db143a287b0
   NukeUI: 6e99837a8d066c93baa4262692d9ea9ffbc863ba
   SwiftGen: 67860cc7c3cfc2ed25b9b74cfd55495fc89f9108
   SwiftLint: 1b7561918a19e23bfed960e40759086e70f4dba5
 
-PODFILE CHECKSUM: 8d2e72dc1c5af167a9fd53a4cc8f4eb636cd1ba9
+PODFILE CHECKSUM: e793724f487281428938ed5b55e566874d0cecc2
 
 COCOAPODS: 1.12.0
