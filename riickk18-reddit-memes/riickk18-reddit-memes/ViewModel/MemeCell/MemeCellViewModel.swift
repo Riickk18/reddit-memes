@@ -5,7 +5,6 @@
 //  Created by Richard Pacheco on 5/10/23.
 //
 
-import Foundation
 import SwiftUI
 
 class MemeCellViewModel: ObservableObject {
@@ -17,7 +16,8 @@ class MemeCellViewModel: ObservableObject {
     @Published var featurePeople: [String] = []
     @Published var ownerImage: String?
     @Published var ownerName: String?
-    
+    @Published var people: [RemoteImageView] = []
+
     init(memeObject: MemeModel) {
         self.image = memeObject.thumbnail
         self.title = memeObject.title
@@ -25,5 +25,10 @@ class MemeCellViewModel: ObservableObject {
         self.likeCounter = memeObject.score
         self.commentsCounter = memeObject.numComments
         self.ownerName = memeObject.author
+        for index in (1...3) {
+            people.append(
+                RemoteImageView(url: "https://picsum.photos/80\(index)/80\(index)")
+            )
+        }
     }
 }

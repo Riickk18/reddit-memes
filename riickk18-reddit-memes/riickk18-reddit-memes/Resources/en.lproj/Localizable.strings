@@ -11,3 +11,6 @@
 "PushNotification.Permission.Subtitle" = "Enable push notifications to let send you personal news and updates.";
 "Location.Permission.Title" = "Enable location services";
 "Location.Permission.Subtitle" = "We wants to access your location only to provide a better experience by helping you find new friends nearby.";
+"Settings.Permissions.Title" = "Permission access";
+"Settings.Permissions.Subtitle" = "To continue, is necessary have access to Camera, Notifications and Location. Give them to enjoy the best experience on Reddit Memes";
+"Settings.Permissions.PrimaryAction" = "Go to Settings";

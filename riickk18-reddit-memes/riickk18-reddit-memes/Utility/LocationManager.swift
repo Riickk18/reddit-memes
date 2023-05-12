@@ -15,7 +15,10 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
     private var locationManager: CLLocationManager = CLLocationManager()
     private var requestLocationAuthorizationCallback: ((CLAuthorizationStatus) -> Void)?
 
-    public func requestLocationAuthorization(onRejectedAction: @escaping () -> Void, onGrantedAction: @escaping () -> Void) {
+    public func requestLocationAuthorization(
+        onRejectedAction: @escaping () -> Void,
+        onGrantedAction: @escaping () -> Void
+    ) {
         self.locationManager.delegate = self
         let currentStatus = locationManager.authorizationStatus
 
@@ -23,6 +26,8 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
         guard currentStatus == .notDetermined else {
             if currentStatus == .denied || currentStatus == .restricted {
                 onRejectedAction()
+            } else {
+                onGrantedAction()
             }
             return
         }
@@ -42,8 +47,10 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
         }
     }
     // MARK: - CLLocationManagerDelegate
-    public func locationManager(_ manager: CLLocationManager,
-                                didChangeAuthorization status: CLAuthorizationStatus) {
+    public func locationManager(
+        _ manager: CLLocationManager,
+        didChangeAuthorization status: CLAuthorizationStatus
+    ) {
         self.requestLocationAuthorizationCallback?(status)
     }
 }

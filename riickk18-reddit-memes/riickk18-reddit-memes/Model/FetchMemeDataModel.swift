@@ -9,7 +9,7 @@ import Foundation
 
 struct FetchMemeModel: Decodable {
     var data: FetchMemeDataModel
-    
+
     struct FetchMemeDataModel: Decodable {
         var after: String?
         var children: [MemeModelObject]

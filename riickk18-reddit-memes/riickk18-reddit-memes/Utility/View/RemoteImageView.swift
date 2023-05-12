@@ -14,7 +14,7 @@ struct RemoteImageView: View {
     var height: CGFloat?
     var resizingMode: ImageResizingMode?
     var imageAlignment: Alignment = .center
-    
+
     public var body: some View {
         LazyImage(source: url) { state in
             if let image = state.image {

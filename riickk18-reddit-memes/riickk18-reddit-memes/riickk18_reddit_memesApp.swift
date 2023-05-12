@@ -14,7 +14,7 @@ struct riickk18_reddit_memesApp: App {
     var body: some Scene {
         WindowGroup {
             if permissionsWasCompleted {
-                EmptyView()
+                MainView()
             } else {
                 PermissionsView(viewModel: PermissionsViewModel())
             }
