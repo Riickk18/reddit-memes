@@ -27,12 +27,14 @@ This section should list any major frameworks that you built your project using.
 * [NukeUI](https://github.com/kean/NukeUI)
 * [Swiftlint](https://github.com/realm/SwiftLint)
 * [SwiftGen](https://github.com/SwiftGen/SwiftGen)
+* [ExytePopupView](https://github.com/exyte/PopupView)
 
 Short description of use:
 
 - NukeUI: for image download and cache
 - Swiftlint: code quality
 - SwiftGen: automatically generate Swift code for resources
+- ExytePopupView: for alerts to user
 
 ## Requirements
 

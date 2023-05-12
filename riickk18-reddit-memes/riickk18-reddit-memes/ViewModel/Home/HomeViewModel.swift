@@ -12,13 +12,15 @@ class HomeViewModel: ObservableObject {
     @Published var isLoading: Bool = false
     @Published var showNoResultsView = false
     @Published var searchText: String = ""
-    var nextPageValue: String?
-    var loadingNextPage: Bool = false
     @Published var elements: [MemeCellView] = [] {
         didSet {
             showNoResultsView = elements.count == 0
         }
     }
+    @Published var showError: Bool = false
+    @Published var errorMessage: String?
+    var nextPageValue: String?
+    var loadingNextPage: Bool = false
 
     /// Elements for filtering posts
     enum DataTypeToFilter: String {
@@ -41,6 +43,15 @@ class HomeViewModel: ObservableObject {
     private func showLoadingView() async {
         await MainActor.run {
             isLoading = true
+        }
+    }
+    
+    private func showError(text: String?) async {
+        await MainActor.run {
+            withAnimation {
+                errorMessage = text
+                showError = true
+            }
         }
     }
 
@@ -81,7 +92,11 @@ class HomeViewModel: ObservableObject {
 
     func fetchInitialMemes() async throws -> [MemeCellView] {
         let networkHandler = NetworkHandler()
-        let memeModelResponse = try await networkHandler.fetchMemes()
+        let (memeModelResponse, error) = try await networkHandler.fetchMemes()
+        guard error == nil else {
+            await showError(text: error)
+            return []
+        }
         self.nextPageValue = memeModelResponse?.data.after
         return await filterElements(elements: memeModelResponse)
     }
@@ -101,7 +116,11 @@ class HomeViewModel: ObservableObject {
     ///   - text: string typed by user
     func searchMemesWithQuery(text: String) async throws -> [MemeCellView] {
         let networkHandler = NetworkHandler()
-        let memeModelResponse = try await networkHandler.searchMemesBy(text: text)
+        let (memeModelResponse, error) = try await networkHandler.searchMemesBy(text: text)
+        guard error == nil else {
+            await showError(text: error)
+            return []
+        }
         self.nextPageValue = memeModelResponse?.data.after
         return await filterElements(elements: memeModelResponse)
     }
@@ -137,7 +156,11 @@ class HomeViewModel: ObservableObject {
     ///   - page: next page identifier
     func fetchNextMemesPage(page: String) async throws -> [MemeCellView] {
         let networkHandler = NetworkHandler()
-        let memeModelResponse = try await networkHandler.fetchMemesByPage(page: page)
+        let (memeModelResponse, error) = try await networkHandler.fetchMemesByPage(page: page)
+        guard error == nil else {
+            await showError(text: error)
+            return []
+        }
         self.nextPageValue = memeModelResponse?.data.after
         var arrayOfMemes = [MemeCellView]()
         memeModelResponse?.data.children.forEach({ memeModelObject in

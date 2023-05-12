@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ExytePopupView
 
 struct HomeView: View {
     @StateObject var viewModel: HomeViewModel
@@ -74,6 +75,21 @@ struct HomeView: View {
                 self.showSettings = false
             }
         })
+        .popup(
+            isPresented: $viewModel.showError,
+            type: .toast,
+            position: .bottom,
+            animation: .easeInOut,
+            autohideIn: 10,
+            dragToDismiss: false,
+            closeOnTap: true,
+            closeOnTapOutside: false,
+            backgroundColor: .clear
+        ) {
+            cleanToast()
+        } view: {
+            ToastView(toastMessage: viewModel.errorMessage, action: { cleanToast() })
+        }
         .task {
             guard viewModel.elements.count == 0 else {return}
             await viewModel.getInitialData()
@@ -90,6 +106,10 @@ struct HomeView: View {
                 await viewModel.searchMemesBy(text: text)
             }
         }
+    }
+
+    private func cleanToast() {
+        viewModel.showError = false
     }
 }
 

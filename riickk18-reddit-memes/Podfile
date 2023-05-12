@@ -9,6 +9,7 @@ target 'riickk18-reddit-memes' do
   pod 'SwiftLint'
   pod 'SwiftGen', '~> 6.4.0'
   pod 'NukeUI'
+  pod 'ExytePopupView', '~> 1.2.1'
 
   target 'riickk18-reddit-memesTests' do
     inherit! :search_paths
