@@ -19,7 +19,6 @@
 Reddit memes has been developed with Swift 5 and Xcode 14.3, following MVVM architecture and implementation of Singleton design pattern for locations feature
 
 ## Built With
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 * [Swift](https://www.swift.org/)
 * [SwiftUI](https://developer.apple.com/xcode/swiftui/)
 
@@ -44,7 +43,7 @@ Short description of use:
 ## Installation and configuration
 First, you need to clone this repository, in order to fetch the code
 ```sh
-$ git clone https://github.com/flymachine-dev/fm-ios.git
+$ git clone https://github.com/Riickk18/reddit-memes.git
 ```
 In order to compile your code, you need to install the dependencies first. You can simply do this by running the following command in the root folder of the project (where the Pods file lives):
 ```sh
